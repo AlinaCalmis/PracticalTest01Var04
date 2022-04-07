@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:id="@+id/navigate_to_another_activity"
+        android:text="@string/another_activity" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="2"
+        android:foregroundGravity="center"
+        android:rowCount="3">
+
+        <CheckBox
+            android:id="@+id/checkbox_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_gravity="start" />
+
+        <CheckBox
+            android:id="@+id/checkbox_group"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_gravity="start" />
+
+
+        <EditText
+            android:id="@+id/name_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:enabled="true"
+            android:gravity="center"
+            android:inputType="text"
+            android:saveEnabled="false" />
+
+        <EditText
+            android:id="@+id/group_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:enabled="true"
+            android:gravity="center"
+            android:inputType="text"
+            android:saveEnabled="false" />
+
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/display_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/display" />
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"/>
+
+
+</LinearLayout>
