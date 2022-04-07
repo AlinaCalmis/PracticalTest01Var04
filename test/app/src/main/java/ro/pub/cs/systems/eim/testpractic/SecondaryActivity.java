@@ -41,11 +41,13 @@ public class SecondaryActivity extends AppCompatActivity {
         group = (TextView)findViewById(R.id.group);
         Intent intent = getIntent();
         if (intent != null && intent.getExtras().containsKey(Constants.NAME)) {
-            String nameF = intent.getDataString();
+//            String nameF = intent.getDataString();
+            String nameF = intent.getStringExtra(Constants.NAME);
             name.setText(nameF);
         }
         if (intent != null && intent.getExtras().containsKey(Constants.GROUP)) {
-            String groupF = intent.getDataString();
+//            String groupF = intent.getDataString();
+            String groupF = intent.getStringExtra(Constants.GROUP);
             group.setText(groupF);
         }
 
